@@ -10,3 +10,5 @@ gsap.to("#Tentacle_5", { duration: 6, ease: "elastic.out", y: -10, repeat: -1 },
 gsap.to("#Eye_Stalk_3", { x: -50, y: 20 }, 1)
 gsap.to("#Eye_Stalk_2", { x: -50, y: 70 }, 1)
 gsap.to("#Eye_Stalk_1", { x: 0, y: 50 }, 1)
+gsap.to("#Small_Box", { y: 30 }, 2)
+gsap.to("#Small_Box_Jet", { y: 30 }, 2)
