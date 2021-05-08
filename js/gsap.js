@@ -1,3 +1,5 @@
+gsap.to("#blue", { stroke: "blue" })
+
 let pageLoad = gsap.timeline()
 
 .to("#Control_Ring", { duration: 3, y: -50, ease: "bounce.out" })
@@ -41,3 +43,7 @@ let cloudsMove = gsap.timeline()
     .fromTo("#Clouds_Back", { display: "none" }, { display: "grid", duration: 2.5, opacity: 1, ease: "elastic", scale: 1.1, x: -3, y: -6, repeat: -1 }, 6)
     .fromTo("#Clouds_Front", { display: "none" }, { display: "grid", duration: 2, opacity: 1, ease: "elastic", scale: 1.1, x: -3, y: -6, repeat: -1 }, 6)
     .fromTo("#Flame", { opacity: 0 }, { duration: 0.1, opacity: 1, repeat: -1 }, 5.5)
+
+
+let wizardTalk = gsap.timeline()
+    .fromTo("#Speech_Bubble", { opacity: 0 }, { duration: 4, opacity: 1 }, 6)
