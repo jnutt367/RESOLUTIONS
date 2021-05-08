@@ -21,10 +21,10 @@ let pageLoad = gsap.timeline()
     .to("#lever3", { y: 10, duration: 2, repeat: 3 })
     .to("#lever4", { y: -20, duration: 2 });
 
-let cloudsMove = gsap.timeline()
+let crystallBall = gsap.timeline()
 
-.fromTo("#Clouds_Back", { display: "none" }, { display: "grid", duration: .3, opacity: 1, ease: "elastic", scale: 1.1, x: -3, y: -6, repeat: -1 }, 6)
-    .to("#Slot_Lever", { x: 30, y: 40, rotate: 45 }, 3)
+
+.to("#Slot_Lever", { x: 30, y: 40, rotate: 45 }, 3)
     .to("#Buttons", { stroke: "black" })
     .to("#slide", { duration: 3, x: 190, ease: "elastic.out" })
     .to("#Arm_Top", { duration: 3, x: 55, y: -50, ease: "elastic.out" }, 4)
@@ -35,3 +35,8 @@ let cloudsMove = gsap.timeline()
     .fromTo(".ball4", { opacity: 0, x: 0, y: 0 }, { scale: 1.1, ease: "bounce", duration: 2.5, opacity: 1 }, 6)
     .fromTo(".ball5", { opacity: 0, x: 0, y: 0 }, { scale: 1.2, ease: "bounce", duration: 1.5, opacity: 1 }, 5)
     .fromTo(".ball6", { opacity: 0, x: 0, y: 0 }, { scale: 1.1, ease: "bounce", duration: 4, opacity: 1 }, 6)
+
+
+let cloudsMove = gsap.timeline()
+    .fromTo("#Clouds_Back", { display: "none" }, { display: "grid", duration: 2.5, opacity: 1, ease: "elastic", scale: 1.1, x: -3, y: -6, repeat: -1 }, 6)
+    .fromTo("#Clouds_Front", { display: "none" }, { display: "grid", duration: 2, opacity: 1, ease: "elastic", scale: 1.1, x: -3, y: -6, repeat: -1 }, 6)
