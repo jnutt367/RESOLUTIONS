@@ -21,3 +21,4 @@ let cloudsMove = gsap.timeline()
 
 .fromTo("#Clouds_Back", { display: "none" }, { display: "grid", duration: .3, opacity: 1, ease: "elastic", scale: 1.1, x: -3, y: -6, repeat: -1 }, 6)
     .to("#Slot_Lever", { x: 30, y: 40, rotate: 45 }, 2)
+    .to("#Buttons", { stroke: "black" })
