@@ -1,5 +1,5 @@
 gsap.to("#Control_Ring", { duration: 3, rotate: 360, ease: "bounce.out" });
-gsap.fromTo("#Magic_Symbols", { opacity: 0 }, { ease: "elastic.inOut", strokeWidth: "5", x: -50, y: -30, scale: 1.1, duration: 5, opacity: 1 });
+gsap.fromTo("#Magic_Symbols", { opacity: 0 }, { ease: "elastic.inOut", strokeWidth: "2", x: -50, y: -30, scale: 1.1, duration: 5, opacity: 1 });
 gsap.to("#Magic_Symbols", { stroke: "#e4196e", ease: "elastic", duration: 5 }, 5)
 gsap.to("#Tentacle_1", { duration: 3, y: 30, x: 10, ease: "elastic.out", repeat: -1 }, 5);
 gsap.to("#Tentacle_2", { duration: 4, y: 30, x: 10, ease: "elastic.out", repeat: -1 }, 5);
