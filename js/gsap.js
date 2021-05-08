@@ -1,5 +1,6 @@
-gsap.to("#Tentacle_1", { duration: 3, y: 100, x: 10 });
-gsap.to("#Tentacle_2", { duration: 2, x: 10, repeat: -1 });
-gsap.to("#Tentacle_3", { duration: 2.5, x: 10, repeat: -1 });
-gsap.to("#Tentacle_4", { duration: 2, x: 10, repeat: -1 });
-gsap.to("#Tentacle_5", { duration: 3, x: 10, repeat: -1 });
+gsap.to("#Tentacle_1", { duration: 3, y: 30, x: 10, ease: "elastic.out", repeat: -1 }, 0);
+gsap.to("#Tentacle_2", { duration: 4, y: 30, x: 10, ease: "elastic.out", repeat: -1 }, 0);
+gsap.to("#Tentacle_3", { duration: 3.5, y: 10, x: 10, ease: "elastic.out", repeat: -1 }, 0);
+gsap.to("#Tentacle_4", { duration: 4, y: 10, x: 10, ease: "elastic.out", repeat: -1 }), 0;
+gsap.to("#Tentacle_5", { duration: 6, ease: "elastic.out", y: -10, repeat: -1 }, 0);
+gsap.to("#Control_Ring", { duration: 3, rotate: 360, ease: "bounce.out" });
