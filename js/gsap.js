@@ -1,4 +1,4 @@
-gsap.to("#blue", { stroke: "blue" })
+gsap.to("#blue", { stroke: "blue", strokeWidth: 5, fill: "white" })
 
 let pageLoad = gsap.timeline()
 
@@ -63,3 +63,11 @@ let wizardTalk = gsap.timeline()
     .fromTo("#u2", { opacity: 0 }, { fill: "white", opacity: 1 }, +9.7)
     .fromTo("#s2", { opacity: 0 }, { fill: "white", opacity: 1 }, +9.9)
     .fromTo("#exclaimation", { opacity: 0 }, { fill: "white", opacity: 1, y: -20, scale: 1.3 }, +11)
+
+
+
+let eyeballsLook = gsap.timeline()
+    .to("#pupil", { x: -65, y: 25 }, 5)
+    .to("#iris", { x: -60, y: 30 }, 5)
+    .to("#eye", { x: -45, y: 10 }, 5)
+    .to("#eyeShadow", { x: -10, y: 10, opacity: 0 }, 5)
