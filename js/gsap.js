@@ -67,7 +67,7 @@ let wizardTalk = gsap.timeline()
 
 
 let eyeballsLook = gsap.timeline()
-    .to("#pupil", { x: -65, y: 25 }, 5)
-    .to("#iris", { x: -60, y: 30 }, 5)
-    .to("#eye", { x: -45, y: 10 }, 5)
+    .to("#pupil", { x: -90, y: 48 }, 5)
+    .to("#iris", { x: -85, y: 50 }, 5)
+    .to("#eye", { x: -69, y: 30 }, 5)
     .to("#eyeShadow", { x: -10, y: 10, opacity: 0 }, 5)
