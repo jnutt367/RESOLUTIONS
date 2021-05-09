@@ -46,7 +46,7 @@ let cloudsMove = gsap.timeline()
     .fromTo("#Flame", { opacity: 0 }, { duration: 0.1, scale: 2, x: -52, y: -352, opacity: 1, repeat: -1, rotate: -5 }, 10)
     .to("#eyes", { x: 2 }, 11)
     .to("#Hand_Left", { duration: 3, ease: "elastic.inOut", x: 100, y: -460, rotate: 90, stroke: "orangered" }, 11)
-    .to("#Sleeve_Left", { fill: "white" }, 11.5)
+    .to("#Sleeve_Left", { fill: "black", scale: 1.01, stroke: "white", repeat: -1 }, 11.5)
     .to("#eyes", { y: -2 }, 12)
 
 let wizardTalk = gsap.timeline()
