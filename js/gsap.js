@@ -44,8 +44,10 @@ let cloudsMove = gsap.timeline()
     .fromTo("#Clouds_Front", { display: "none" }, { display: "grid", duration: 2, opacity: 1, ease: "elastic", scale: 1.1, x: -3, y: -6, repeat: -1 }, 6)
     .to("#Hand_Right", { duration: 3, stroke: "orangered", scale: 2, x: 12, y: 2, opacity: 0.5, ease: "elastic", strokeWidth: 2, rotate: -5 }, 7)
     .fromTo("#Flame", { opacity: 0 }, { duration: 0.1, scale: 2, x: -52, y: -352, opacity: 1, repeat: -1, rotate: -5 }, 10)
-    .to("#Hand_Left", { duration: 3, ease: "elastic.inOut", x: 100, y: -460, rotate: 90, stroke: "orangered" }, 9)
-
+    .to("#eyes", { x: 2 }, 11)
+    .to("#Hand_Left", { duration: 3, ease: "elastic.inOut", x: 100, y: -460, rotate: 90, stroke: "orangered" }, 11)
+    .to("#Sleeve_Left", { fill: "white" }, 11.5)
+    .to("#eyes", { y: -2 }, 12)
 
 let wizardTalk = gsap.timeline()
     .fromTo("#Speech_Bubble", { opacity: 0 }, { duration: 4, opacity: 1 }, 7)
