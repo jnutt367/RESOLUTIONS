@@ -45,6 +45,7 @@ let jetFire = gsap.timeline()
     .fromTo("#bg", { y: 0 }, { y: 0, stroke: "skyblue", strokeWidth: 5, fill: "red", }, 5.9)
     .fromTo("#bg", { y: 0 }, { y: 0, stroke: "skyblue", strokeWidth: 5, fill: "black", }, 6.9)
     .to("#Wizard", { x: 10 })
+    .to("#Magic_Symbols", { stroke: "black", strokeWidth: 3, repeat: -1 }, 10)
 
 
 
