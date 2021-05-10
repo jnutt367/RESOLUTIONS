@@ -95,5 +95,5 @@ let eyeballsLook = gsap.timeline()
 let displayProject = gsap.timeline()
 
 .fromTo("svg", { display: "grid" }, { duration: 10, scale: 0.1, display: "none", ease: "elastic.in" }, 13)
-    .fromTo("h1", { opacity: 0 }, { opacity: 1, textAlign: "center", display: "grid", duration: 10, ease: "bounce", fontFamily: "fantasy" }, 3)
-    .to("h1", { y: 200, color: "white", textShadow: "2px 2px purple", textContent: "Now let's get to work making magic HAPPEN!!" }, 23)
+    .fromTo("h1", { opacity: 0, margin: 10, fontSize: 20 }, { opacity: 1, textAlign: "center", display: "grid", duration: 10, ease: "bounce", fontFamily: "fantasy" }, 3)
+    .to("h1", { y: 200, color: "white", textShadow: "2px 2px purple", fontSize: 30, textContent: "Now let's get to work making magic HAPPEN!!" }, 23)
