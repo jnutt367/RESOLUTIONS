@@ -1,6 +1,6 @@
 gsap.to("#blue", { stroke: "blue", strokeWidth: 5, fill: "green" })
 gsap.fromTo("#bg", { y: 0 }, { y: 0, stroke: "green", fill: "#f5b543" })
-gsap.fromTo("svg", { autoAlpha: 0, opacity: 0, scale: 0.1 }, { duration: 15, margin: "10", stroke: "black", autoAlpha: 1, scale: 1, opacity: 1, ease: "elastic", borderRadius: "50%", duration: 1, display: "grid" }, 0)
+gsap.fromTo("svg", { autoAlpha: 0.7, opacity: 0, scale: 0.1 }, { duration: 15, margin: "10", stroke: "black", autoAlpha: 2, scale: 1, opacity: 1, ease: "elastic", borderRadius: "50%", duration: 1, display: "grid" }, 0)
 gsap.to("html", { autoAlpha: 0.1, backgroundColor: "black" })
 gsap.from("html", { autoAlpha: 1 })
 
@@ -94,5 +94,5 @@ let eyeballsLook = gsap.timeline()
 let displayProject = gsap.timeline()
 
 .fromTo("svg", { display: "grid" }, { scale: 1, ease: "elastic.inOut", repeat: -1 }, 13)
-    .fromTo("h1", { opacity: 0, margin: 10, fontSize: 20 }, { opacity: 1, textAlign: "center", display: "grid", duration: 10, ease: "bounce", fontFamily: "fantasy" }, 3)
+    .fromTo("h1", { opacity: 0, margin: 10, fontSize: 20 }, { opacity: 1, textAlign: "center", display: "grid", duration: 10, ease: "bounce", fontFamily: "Raleway" }, 3)
     //.to("h1", { y: 200, color: "white", textShadow: "2px 2px purple", fontSize: 50, textContent: "Now let's get to work making magic HAPPEN!!" }, 23)
