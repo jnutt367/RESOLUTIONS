@@ -94,4 +94,4 @@ let eyeballsLook = gsap.timeline()
 
 let displayProject = gsap.timeline()
 
-.fromTo("svg", { display: "grid" }, { duration: 2, scale: 0.1, display: "none", ease: "elastic" }, 13)
+.fromTo("svg", { display: "grid" }, { duration: 10, scale: 0.1, display: "none", ease: "elastic.in" }, 13)
