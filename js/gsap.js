@@ -1,6 +1,6 @@
-gsap.to("#blue", { stroke: "blue", strokeWidth: 5, fill: "" })
-gsap.fromTo("#bg", { y: 0 }, { y: 0, fill: "#f5b543" })
-gsap.fromTo("svg", { opacity: 0, scale: 0.1 }, { scale: 1, opacity: 1, ease: "back", borderRadius: "360", duration: 1, display: "grid" })
+gsap.to("#blue", { stroke: "blue", strokeWidth: 5, fill: "green" })
+gsap.fromTo("#bg", { y: 0 }, { y: 0, stroke: "orange", fill: "#f5b543" })
+gsap.fromTo("svg", { autoAlpha: 0, opacity: 0, scale: 0.1 }, { autoAlpha: 1, scale: 1, opacity: 1, ease: "back", borderRadius: "50%", duration: 1, display: "grid" }, 0)
 gsap.to("html", { backgroundColor: "black" })
 let pageLoad = gsap.timeline()
 
@@ -45,9 +45,8 @@ let crystallBall = gsap.timeline()
 let jetFire = gsap.timeline()
 
 .fromTo("#Jet", { opacity: 0 }, { duration: 2, x: -5, y: 7, opacity: 1, stroke: "red", repeat: -1 }, 5.5)
-    .fromTo("#bg", { y: 0 }, { y: 0, stroke: "skyblue", strokeWidth: 5, fill: "red", }, 5.9)
-    .fromTo("#bg", { y: 0 }, { y: 0, stroke: "skyblue", strokeWidth: 5, fill: "black", }, 6.9)
-    .to("svg", { scale: 1, opacity: 1, ease: "back", duration: 2, borderRadius: "5" }, 6)
+    .fromTo("#bg", { y: 0 }, { y: 0, stroke: "orange", strokeWidth: 5, fill: "black", }, 6.9)
+    .to("svg", { scale: 1, opacity: 1, ease: "elastic.out", duration: "20", borderRadius: "5" }, 5.6)
     .to("#Wizard", { x: 10 })
     .to("#Magic_Symbols", { stroke: "black", strokeWidth: 3, repeat: -1 }, 10)
 
