@@ -42,7 +42,8 @@ let crystallBall = gsap.timeline()
 let jetFire = gsap.timeline()
 
 .fromTo("#Jet", { opacity: 0 }, { duration: 2, x: -5, y: 7, opacity: 1, stroke: "red", repeat: -1 }, 5.5)
-    .fromTo("#bg", { y: 0 }, { y: 0, stroke: "skyblue", strokeWidth: 5, fill: "black", }, 5.9)
+    .fromTo("#bg", { y: 0 }, { y: 0, stroke: "skyblue", strokeWidth: 5, fill: "red", }, 5.9)
+    .fromTo("#bg", { y: 0 }, { y: 0, stroke: "skyblue", strokeWidth: 5, fill: "black", }, 6.9)
     .to("#Wizard", { x: 10 })
 
 
