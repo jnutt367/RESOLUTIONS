@@ -41,7 +41,7 @@ let crystallBall = gsap.timeline()
 
 let jetFire = gsap.timeline()
 
-.fromTo("#Jet", { opacity: 0 }, { duration: 1, x: -5, y: 7, opacity: 1, stroke: "red", repeat: -1 }, 5.5)
+.fromTo("#Jet", { opacity: 0 }, { duration: 2, x: -5, y: 7, opacity: 1, stroke: "red", repeat: -1 }, 5.5)
     .to("#Wizard", { x: 10 })
 
 
@@ -78,7 +78,7 @@ let eyeballsLook = gsap.timeline()
 
 .to("#eyes", { x: -10, y: 10 }, 9.5)
     .to("#eyeball", { scale: 1.005, y: -10, ease: "bounce.out" }, 5.5)
-    .to("#pupil", { duration: 1, x: -90, y: 48, ease: "bounce.in" }, 5)
-    .to("#iris", { duration: 1, x: -85, y: 50, ease: "bounce.in" }, 5)
+    .to("#pupil", { duration: 1, x: -70, y: 25, ease: "bounce.in" }, 5)
+    .to("#iris", { duration: 1, x: -65, y: 27, ease: "bounce.in" }, 5)
     .to("#eye", { duration: 1, x: -69, y: 30, ease: "bounce.in" }, 5)
     .to("#eyeShadow", { duration: 1, x: -10, y: 10, ease: "bounce.in", opacity: 0 }, 5)
