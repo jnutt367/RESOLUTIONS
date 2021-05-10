@@ -1,6 +1,9 @@
 gsap.to("#blue", { stroke: "blue", strokeWidth: 5, fill: "" })
 gsap.fromTo("#bg", { y: 0 }, { y: 0, fill: "#f5b543" })
+gsap.fromTo("svg", { opacity: 0, scale: 0.1 }, { scale: 1, opacity: 1, ease: "back", borderRadius: "360", duration: 1, display: "grid" })
+gsap.to("html", { backgroundColor: "black" })
 let pageLoad = gsap.timeline()
+
 
 .to("#Control_Ring", { duration: 3, y: -50, ease: "bounce.out" })
     .fromTo("#Magic_Symbols", { opacity: 0 }, { ease: "elastic.inOut", strokeWidth: "2", x: -50, y: -30, scale: 1.1, duration: 5, opacity: 1 })
@@ -44,6 +47,7 @@ let jetFire = gsap.timeline()
 .fromTo("#Jet", { opacity: 0 }, { duration: 2, x: -5, y: 7, opacity: 1, stroke: "red", repeat: -1 }, 5.5)
     .fromTo("#bg", { y: 0 }, { y: 0, stroke: "skyblue", strokeWidth: 5, fill: "red", }, 5.9)
     .fromTo("#bg", { y: 0 }, { y: 0, stroke: "skyblue", strokeWidth: 5, fill: "black", }, 6.9)
+    .to("svg", { scale: 1, opacity: 1, ease: "back", duration: 2, borderRadius: "5" }, 6)
     .to("#Wizard", { x: 10 })
     .to("#Magic_Symbols", { stroke: "black", strokeWidth: 3, repeat: -1 }, 10)
 
@@ -88,3 +92,7 @@ let eyeballsLook = gsap.timeline()
     .to("#eyeShadow", { duration: 1, x: -10, y: 10, ease: "bounce.in", opacity: 0 }, 5)
     .to("#Wizard_Face", { duration: .1, opacity: 0.9, fill: "orange", repeat: -1 }, 10.2)
     .to("#Sleeve_Left", { duration: .1, opacity: 0.9, fill: "orange", repeat: -1 }, 10.2)
+
+let displayProject = gsap.timeline()
+
+.fromTo("svg", { display: "grid" }, { duration: 2, scale: 0.1, display: "none", ease: "elastic" }, 13)
