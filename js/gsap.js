@@ -1,12 +1,16 @@
 gsap.to("#blue", { stroke: "blue", strokeWidth: 5, fill: "green" })
-gsap.fromTo("#bg", { y: 0 }, { y: 0, stroke: "white", fill: "#f5b543" })
+gsap.fromTo("#bg", { y: 0 }, { y: 0, stroke: "green", fill: "#f5b543" })
 gsap.fromTo("svg", { autoAlpha: 0, opacity: 0, scale: 0.1 }, { duration: 15, margin: "10", stroke: "black", autoAlpha: 1, scale: 1, opacity: 1, ease: "elastic", borderRadius: "50%", duration: 1, display: "grid" }, 0)
-gsap.to("html", { backgroundColor: "black" })
+gsap.to("html", { autoAlpha: 0.1, backgroundColor: "black" })
+gsap.from("html", { autoAlpha: 1 })
+
+
+
 let pageLoad = gsap.timeline()
 
 
 .to("#Control_Ring", { duration: 3, y: -50, ease: "bounce.out" })
-    .fromTo("#Magic_Symbols", { opacity: 0 }, { ease: "elastic.inOut", strokeWidth: "2", x: -50, y: -30, scale: 1.1, duration: 5, opacity: 1 })
+    .fromTo("#Magic_Symbols", { autoAlpha: 0, opacity: 0 }, { autoAlpha: 1, ease: "elastic.inOut", strokeWidth: "2", x: -50, y: -30, scale: 1.1, duration: 5, opacity: 1 })
     .to("#Magic_Symbols", { stroke: "#e4196e", ease: "elastic", duration: 5 }, 5)
     .to("#Tentacle_1", { duration: 3, y: 30, x: 10, ease: "elastic.out", repeat: -1 }, 5)
     .to("#Tentacle_2", { duration: 4, y: 30, x: 10, ease: "elastic.out", repeat: -1 }, 5)
