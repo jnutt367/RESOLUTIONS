@@ -39,6 +39,12 @@ let crystallBall = gsap.timeline()
     .fromTo(".ball6", { opacity: 0, x: 0, y: 0 }, { scale: 1.1, ease: "bounce", duration: 4, opacity: 1 }, 6)
     .fromTo("#Layer_6", { opacity: 0, x: 0 }, { duration: 4, x: 10, ease: "elastic.out", opacity: 1 }, 4)
 
+let jetFire = gsap.timeline()
+
+.fromTo("#Jet", { opacity: 0 }, { duration: 1, opacity: 1, stroke: "red", repeat: -1 }, 5.5)
+    .to("#Wizard", { x: 10 })
+
+
 let cloudsMove = gsap.timeline()
     .fromTo("#Clouds_Back", { display: "none" }, { display: "grid", duration: 2.5, opacity: 1, ease: "elastic", scale: 1.1, x: -3, y: -6, repeat: -1 }, 6)
     .fromTo("#Clouds_Front", { display: "none" }, { display: "grid", duration: 2, opacity: 1, ease: "elastic", scale: 1.1, x: -3, y: -6, repeat: -1 }, 6)
