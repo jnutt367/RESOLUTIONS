@@ -28,8 +28,8 @@ let sliderShowText = gsap.timeline(
 
 )
 
-.fromTo("#slide", { x: 0 }, { duration: 6, ease: "power1.out", x: 230 }, 6)
-    .fromTo("#Layer_6", { opacity: 0 }, { opacity: 1 }, 6)
-    .fromTo("#Letter_Shadow", { opacity: 0 }, { duration: 4, opacity: 1 }, 6.2)
+.fromTo("#slide", { x: 0 }, { duration: 6, ease: "power1.out", x: 230 }, 7)
+    .fromTo("#Layer_6", { opacity: 0 }, { opacity: 1 }, 7.1)
+    .fromTo("#Letter_Shadow", { opacity: 0 }, { duration: 4, opacity: 1 }, 7.5)
     .fromTo("#Letter_Siding", { opacity: 0 }, { duration: 3, opacity: 1 }, 8)
     .fromTo("#Letter", { opacity: 0 }, { duration: 3, opacity: 1 }, 9)
