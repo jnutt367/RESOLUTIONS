@@ -1,7 +1,6 @@
 gsap.to("#blue", { stroke: "blue", strokeWidth: 5, fill: "green" })
-gsap.fromTo("#bg", { y: 0 }, { y: 0, stroke: "green", fill: "#f5b543" })
-gsap.fromTo("svg", { autoAlpha: 0.7, opacity: 0, scale: 0.1 }, { duration: 15, margin: "10", stroke: "black", autoAlpha: 2, scale: 1, opacity: 1, ease: "elastic", borderRadius: "50%", duration: 1, display: "grid" }, 0)
-gsap.to("html", { autoAlpha: 0.1, backgroundColor: "black" })
+gsap.fromTo("svg", { opacity: 0, scale: 0 }, { duration: 15, margin: "10", stroke: "black", autoAlpha: 2, scale: 1, opacity: 1, ease: "elastic", borderRadius: "50%", duration: 1, display: "grid" }, 0)
+gsap.to("html", { backgroundColor: "black" })
 gsap.from("html", { autoAlpha: 1 })
 
 
