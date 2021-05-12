@@ -68,3 +68,11 @@ let eyesMove = gsap.timeline()
     .to("#eyes", { duration: 1, y: -5, x: 0 })
     .to("#eyes", { duration: 1, y: 0, x: 2 })
     .to("#eyes", { duration: 1, x: 2, y: 12 })
+
+
+let tumblersSipn = gsap.timeline()
+
+.to("#Slot_Lever", { x: 50, y: 10, rotate: 45 }, 20)
+    .to("#Crop", { duration: .3, y: -15, opacity: 0, repeat: -1 })
+    .to("#Share", { duration: .2, y: 15, opacity: 0, repeat: -1 })
+    .to("#Export", { duration: .3, y: -15, opacity: 0, repeat: -1 })
