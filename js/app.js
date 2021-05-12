@@ -28,25 +28,25 @@ let sliderShowText = gsap.timeline(
 
 )
 
-.fromTo("#slide", { x: 0 }, { duration: 6, ease: "power1.out", x: 230 }, 7)
+.fromTo("#slide", { x: 0 }, { duration: 3, ease: "power1.out", x: 230 }, 7)
     .fromTo("#Layer_6", { opacity: 0 }, { opacity: 1 }, 7.1)
-    .fromTo("#Letter_Shadow", { opacity: 0 }, { duration: 4, opacity: 1 }, 7.5)
-    .fromTo("#Letter_Siding", { opacity: 0 }, { duration: 3, opacity: 1 }, 8)
-    .fromTo("#Letter", { opacity: 0 }, { duration: 3, opacity: 1 }, 9)
+    .fromTo("#Letter_Shadow", { opacity: 0 }, { duration: 2, opacity: 1 }, 7.5)
+    .fromTo("#Letter_Siding", { opacity: 0 }, { duration: 1.5, opacity: 1 }, 8)
+    .fromTo("#Letter", { opacity: 0 }, { duration: 1.5, opacity: 1 }, 9)
     .to("#Speech_Bubble", { opacity: 1 })
 
 .fromTo("#Magic_Symbols", { opacity: 0 }, { opacity: 1 })
     .fromTo("#First_Circle", { opacity: 0 }, { duration: 1, opacity: 1 }, 0)
-    .fromTo("#Second_Circle", { opacity: 0 }, { duration: 1.5, opacity: 1 }, )
+    .fromTo("#Second_Circle", { opacity: 0 }, { duration: 1, opacity: 1 }, )
     .fromTo("#Third_Circle", { opacity: 0 }, { duration: 1, opacity: 1 }, )
-    .fromTo("#Fourth_Circle", { opacity: 0 }, { duration: 1.2, opacity: 1 }, )
+    .fromTo("#Fourth_Circle", { opacity: 0 }, { duration: 1, opacity: 1 }, )
     .fromTo("#Fifth_Circle", { opacity: 0 }, { duration: 1, opacity: 1 }, )
 
 .fromTo("#First_Circle_Inner", { opacity: 0 }, { duration: 1, opacity: 1 }, )
-    .fromTo("#Second_Circle_Inner", { opacity: 0 }, { duration: 2, opacity: 1 }, )
-    .fromTo("#Third_Circle_Inner", { opacity: 0 }, { duration: 1.5, opacity: 1 }, )
-    .fromTo("#Fourth_Circle_Inner", { opacity: 0 }, { duration: 4, opacity: 1 }, )
-    .fromTo("#Fifth_Circle_Inner", { opacity: 0 }, { duration: 4, opacity: 1 }, )
+    .fromTo("#Second_Circle_Inner", { opacity: 0 }, { duration: 1, opacity: 1 }, )
+    .fromTo("#Third_Circle_Inner", { opacity: 0 }, { duration: 1, opacity: 1 }, )
+    .fromTo("#Fourth_Circle_Inner", { opacity: 0 }, { duration: 1, opacity: 1 }, )
+    .fromTo("#Fifth_Circle_Inner", { opacity: 0 }, { duration: 1, opacity: 1 }, )
     .fromTo("#Outer_Circle", { opacity: 0 }, { duration: 10, opacity: 1 })
 
 
