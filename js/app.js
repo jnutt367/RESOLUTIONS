@@ -82,13 +82,13 @@ let tumblersSipn = gsap.timeline()
 
 
 let powerGauge = gsap.timeline()
-    .to("#Gauge_Handle", { scale: 1 })
+    .to("#Gauge_Handle", { scale: 0 })
     .to("#Gauge_Arrow", { duration: 1.1, x: 70, y: -20, ease: "bounce" }, 15.25)
     .to("#Gauge_Arrow", { duration: 1.1, x: 160, rotate: 25, y: -25, ease: "bounce" })
     .to("#Gauge_Arrow", { duration: 1.1, x: 300, rotate: 55, y: 25, ease: "bounce" })
     .to("#Gauge_Arrow", { duration: 1.1, x: 400, rotate: 85, y: 130, ease: "bounce" })
-    .to("#Gauge_Arrow", { duration: 1, x: 430, rotate: 110, y: 280, ease: "bounce.out" })
-    .to("#Gauge_Arrow", { duration: .1, x: 430, rotate: 110, y: 270, ease: "power.out", repeat: -1 })
+    .to("#Gauge_Arrow", { duration: 1, x: 430, rotate: 110, y: 280, ease: "bounce" })
+    .to("#Gauge_Arrow", { duration: .1, x: 430, rotate: 110, y: 270, ease: "bounce", repeat: -1 })
 
 
 let circlesIngnite = gsap.timeline()
