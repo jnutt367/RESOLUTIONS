@@ -88,7 +88,7 @@ let powerGauge = gsap.timeline()
     .to("#Gauge_Arrow", { duration: 1.1, x: 300, rotate: 55, y: 25, ease: "bounce" })
     .to("#Gauge_Arrow", { duration: 1.1, x: 400, rotate: 85, y: 130, ease: "bounce" })
     .to("#Gauge_Arrow", { duration: 1, x: 430, rotate: 110, y: 280, ease: "bounce" })
-    .to("#Gauge_Arrow", { duration: .1, x: 430, rotate: 110, y: 270, ease: "bounce", repeat: -1 })
+    .to("#Gauge_Arrow", { duration: .1, x: 430, rotate: 110, y: 270, ease: "bounce" })
 
 
 let circlesIngnite = gsap.timeline()
