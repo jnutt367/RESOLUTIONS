@@ -36,8 +36,14 @@ let sliderShowText = gsap.timeline(
     .to("#Speech_Bubble", { opacity: 1 })
 
 .fromTo("#Magic_Symbols", { opacity: 0 }, { opacity: 1 })
-    .fromTo("#First_Circle", { opacity: 0 }, { opacity: 0 })
-    .fromTo("#Fifth_Circle", { opacity: 0 }, { opacity: 1 })
+    .fromTo("#First_Circle", { opacity: 0 }, { opacity: 1 })
+    .fromTo("#Second_circle", { opacity: 0 }, { opacity: 0 })
     .fromTo("#Third_Circle", { opacity: 0 }, { opacity: 0 })
     .fromTo("#Fourth_Circle", { opacity: 0 }, { opacity: 0 })
-    .fromTo("#Second_circle", { opacity: 0 }, { opacity: 0 })
+    .fromTo("#Fifth_Circle", { opacity: 0 }, { opacity: 0 })
+
+.fromTo("#First_Circle_Inner", { opacity: 0 }, { opacity: 1 })
+    .fromTo("#Second_circle_Inner", { opacity: 0 }, { opacity: 0 })
+    .fromTo("#Third_Circle_Inner", { opacity: 0 }, { opacity: 0 })
+    .fromTo("#Fourth_Circle_Inner", { opacity: 0 }, { opacity: 0 })
+    .fromTo("#Fifth_Circle_Inner", { opacity: 0 }, { opacity: 0 })
