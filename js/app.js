@@ -68,8 +68,8 @@ let eyesMove = gsap.timeline()
     .to("#eyes", { duration: 1, y: 0, x: 2 })
     .to("#eyes", { duration: 1, x: 2, y: 12 })
     .to("#eyes", { duration: 1, x: -3 })
-    .to("#eyes", { duration: 5, ease: "elastic.inOut", x: -6, repeat: -1 })
-    .to("#Eyeball", )
+    .fromTo("#eyes", { x: 0 }, { duration: 5, ease: "elastic.inOut", x: 2, repeat: -1 })
+    .to("#eye", { y: 30, x: -50 })
 
 
 let tumblersSipn = gsap.timeline()
