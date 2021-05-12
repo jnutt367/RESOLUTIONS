@@ -36,15 +36,25 @@ let sliderShowText = gsap.timeline(
     .to("#Speech_Bubble", { opacity: 1 })
 
 .fromTo("#Magic_Symbols", { opacity: 0 }, { opacity: 1 })
-    .fromTo("#First_Circle", { opacity: 0 }, { opacity: 0 })
-    .fromTo("#Second_Circle", { opacity: 0 }, { opacity: 0 })
-    .fromTo("#Third_Circle", { opacity: 0 }, { opacity: 0 })
-    .fromTo("#Fourth_Circle", { opacity: 0 }, { opacity: 0 })
-    .fromTo("#Fifth_Circle", { opacity: 0 }, { opacity: 0 })
+    .fromTo("#First_Circle", { opacity: 0 }, { duration: 1, opacity: 1 }, 0)
+    .fromTo("#Second_Circle", { opacity: 0 }, { duration: 1.5, opacity: 1 }, )
+    .fromTo("#Third_Circle", { opacity: 0 }, { duration: 1, opacity: 1 }, )
+    .fromTo("#Fourth_Circle", { opacity: 0 }, { duration: 1.2, opacity: 1 }, )
+    .fromTo("#Fifth_Circle", { opacity: 0 }, { duration: 1, opacity: 1 }, )
 
-.fromTo("#First_Circle_Inner", { opacity: 0 }, { opacity: 0 })
-    .fromTo("#Second_Circle_Inner", { opacity: 0 }, { opacity: 0 })
-    .fromTo("#Third_Circle_Inner", { opacity: 0 }, { opacity: 0 })
-    .fromTo("#Fourth_Circle_Inner", { opacity: 0 }, { opacity: 0 })
-    .fromTo("#Fifth_Circle_Inner", { opacity: 0 }, { opacity: 0 })
-    .fromTo("#Outer_Circle", { opacity: 0 }, { opacity: 0 })
+.fromTo("#First_Circle_Inner", { opacity: 0 }, { duration: 1, opacity: 1 }, )
+    .fromTo("#Second_Circle_Inner", { opacity: 0 }, { duration: 2, opacity: 1 }, )
+    .fromTo("#Third_Circle_Inner", { opacity: 0 }, { duration: 1.5, opacity: 1 }, )
+    .fromTo("#Fourth_Circle_Inner", { opacity: 0 }, { duration: 4, opacity: 1 }, )
+    .fromTo("#Fifth_Circle_Inner", { opacity: 0 }, { duration: 4, opacity: 1 }, )
+    .fromTo("#Outer_Circle", { opacity: 0 }, { duration: 10, opacity: 1 })
+
+
+
+let eyesMove = gsap.timeline()
+
+.to("#eyes", { y: -10 }, 13)
+    .to("#eyes", { y: 10, x: -13 }, 15)
+    .fromTo("#symbol", { opacity: 0 }, { opacity: 1 })
+    .fromTo("#Flame", { opacity: 0 }, { opacity: 1 })
+    //.to("#eyes", { duration: 5, y: -10, x: 0 })
