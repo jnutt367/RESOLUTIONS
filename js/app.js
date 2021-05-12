@@ -1,8 +1,8 @@
 gsap.to("html", { backgroundColor: "black" })
 
 
-gsap.to("#Layer_6", { opacity: 0 })
-gsap.to("#Magic_Symbols", { opacity: 0 })
+gsap.to("#First_Circle", { opacity: 1, display: "grid" })
+
 
 let doubleBoxLift = gsap.timeline(
 
@@ -33,3 +33,11 @@ let sliderShowText = gsap.timeline(
     .fromTo("#Letter_Shadow", { opacity: 0 }, { duration: 4, opacity: 1 }, 7.5)
     .fromTo("#Letter_Siding", { opacity: 0 }, { duration: 3, opacity: 1 }, 8)
     .fromTo("#Letter", { opacity: 0 }, { duration: 3, opacity: 1 }, 9)
+    .to("#Speech_Bubble", { opacity: 1 })
+
+.fromTo("#Magic_Symbols", { opacity: 0 }, { opacity: 1 })
+    .fromTo("#First_Circle", { opacity: 0 }, { opacity: 0 })
+    .fromTo("#Fifth_Circle", { opacity: 0 }, { opacity: 1 })
+    .fromTo("#Third_Circle", { opacity: 0 }, { opacity: 0 })
+    .fromTo("#Fourth_Circle", { opacity: 0 }, { opacity: 0 })
+    .fromTo("#Second_circle", { opacity: 0 }, { opacity: 0 })
