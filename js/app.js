@@ -69,7 +69,7 @@ let eyesMove = gsap.timeline()
     .to("#eyes", { duration: 1, x: 2, y: 12 })
     .to("#eyes", { duration: 1, x: -3 })
     .fromTo("#eyes", { x: 0 }, { duration: 5, ease: "elastic.inOut", x: 2, repeat: -1 })
-    .to("#eye", { y: 30, x: -50 })
+    .to("#eye", { y: 30, x: -50 });
 
 
 let tumblersSipn = gsap.timeline()
@@ -78,4 +78,13 @@ let tumblersSipn = gsap.timeline()
     .to("#Crop", { duration: .3, y: -15, opacity: 0, repeat: -1, ease: "bounce" })
     .to("#Share", { duration: .2, y: 15, opacity: 0, repeat: -1, ease: "bounce" })
     .to("#Export", { duration: .3, y: -15, opacity: 0, repeat: -1, ease: "bounce" })
-    .to(".Button_Class", { y: -70 })
+    .to(".Button_Class", { y: -70 });
+
+
+let powerGauge = gsap.timeline()
+
+.to("#Gauge", { duration: 1, x: 70, y: -20, scale: 1.1 }, 15.5)
+    .to("#Gauge", { duration: 1, x: 150, y: -25 })
+    //.to("#Gauge", { duration: 1, x: 300, y: 30 })
+    //.to("#Gauge", { duration: 1, x: 400, y: 50 })
+    //.to("#Gauge", { duration: 1, x: 70, y: -20 })
