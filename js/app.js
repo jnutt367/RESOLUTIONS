@@ -103,4 +103,4 @@ let circlesIngnite = gsap.timeline()
 
 let crystallBall = gsap.timeline()
 
-.fromTo("#Crystal_Power", { opacity: 0 }, { opacity: 1, stroke: "gold", duration: 10, ease: "bounce.out" }, 20)
+.fromTo("#Crystal_Power", { opacity: 0 }, { duration: 3, ease: "back", opacity: 1 }, 21)
