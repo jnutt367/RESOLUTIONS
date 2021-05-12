@@ -47,16 +47,17 @@ let sliderShowText = gsap.timeline(
     .fromTo("#Third_Circle_Inner", { opacity: 0 }, { duration: 1, opacity: 1 }, )
     .fromTo("#Fourth_Circle_Inner", { opacity: 0 }, { duration: 1, opacity: 1 }, )
     .fromTo("#Fifth_Circle_Inner", { opacity: 0 }, { duration: 1, opacity: 1 }, )
-    .fromTo("#Outer_Circle", { opacity: 0 }, { duration: 10, opacity: 1 })
+    .fromTo("#Outer_Circle", { opacity: 0 }, { duration: 1, opacity: 1 });
 
 
 
 let eyesMove = gsap.timeline()
 
-.to("#eyes", { y: -10 }, 13)
-    .to("#eyes", { y: 10, x: -13 }, 15)
+.to("#eyes", { y: -10 }, 10)
+    .to("#eyes", { y: 10, x: -13 }, 11)
     .fromTo("#symbol", { opacity: 0 }, { opacity: 1 })
     .fromTo("#Flame", { opacity: 0 }, { opacity: 1 })
     .to("#eyes", { duration: 1, y: -10, x: 0 })
     .to("#eyes", { duration: 4, x: 3, y: 5 })
-    .to("#eyes", { duration: 4, x: -3 })
+    .to("#eyes", { duration: 1, x: -3 })
+    .to("#eyes", { duration: 2, x: 2, y: 12 })
