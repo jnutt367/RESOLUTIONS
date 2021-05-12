@@ -82,9 +82,20 @@ let tumblersSipn = gsap.timeline()
 
 
 let powerGauge = gsap.timeline()
+    .to("#Gauge_Handle", { scale: 1 })
+    .to("#Gauge_Arrow", { duration: 1.1, x: 70, y: -20, ease: "bounce" }, 15.25)
+    .to("#Gauge_Arrow", { duration: 1.1, x: 160, rotate: 25, y: -25, ease: "bounce" })
+    .to("#Gauge_Arrow", { duration: 1.1, x: 300, rotate: 55, y: 25, ease: "bounce" })
+    .to("#Gauge_Arrow", { duration: 1.1, x: 400, rotate: 85, y: 130, ease: "bounce" })
+    .to("#Gauge_Arrow", { duration: 1, x: 430, rotate: 110, y: 280, ease: "bounce.out" })
+    .to("#Gauge_Arrow", { duration: .1, x: 430, rotate: 110, y: 270, ease: "power.out", repeat: -1 })
 
-.to("#Gauge", { duration: 1, x: 70, y: -20, scale: 1.1 }, 15.5)
-    .to("#Gauge", { duration: 1, x: 150, y: -25 })
-    //.to("#Gauge", { duration: 1, x: 300, y: 30 })
-    //.to("#Gauge", { duration: 1, x: 400, y: 50 })
-    //.to("#Gauge", { duration: 1, x: 70, y: -20 })
+
+let circlesIngnite = gsap.timeline()
+
+.to("#First_Circle_Inner", { stroke: "gold", strokeWidth: "4" }, 16)
+    .to("#Second_Circle_Inner", { stroke: "gold", strokeWidth: "4" }, )
+    .to("#Third_Circle_Inner", { stroke: "gold", strokeWidth: "4" }, )
+    .to("#Fourth_Circle_Inner", { stroke: "gold", strokeWidth: "4" }, )
+    .to("#Fifth_Circle_Inner", { duration: 3, repeat: -1, stroke: "gold", strokeWidth: "6", ease: "bounce" }, )
+    .to("#Fifth_Circle", { duration: 3, repeat: -1, stroke: "gold", strokeWidth: "6", ease: "bounce" }, )
