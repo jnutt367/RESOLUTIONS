@@ -69,7 +69,7 @@ let eyesMove = gsap.timeline()
     .to("#eyes", { duration: 1, x: 2, y: 12 })
     .to("#eyes", { duration: 1, x: -3 })
     .fromTo("#eyes", { x: 0 }, { duration: 5, ease: "elastic.inOut", x: 2, repeat: -1 })
-    .to("#eye", { y: 30, x: -50 });
+    .to("#eye", { y: 30, x: -50 }, 21);
 
 
 let tumblersSipn = gsap.timeline()
@@ -99,3 +99,8 @@ let circlesIngnite = gsap.timeline()
     .to("#Fourth_Circle_Inner", { stroke: "gold", strokeWidth: "4" }, )
     .to("#Fifth_Circle_Inner", { duration: 3, repeat: -1, stroke: "gold", strokeWidth: "6", ease: "bounce" }, )
     .to("#Fifth_Circle", { duration: 3, repeat: -1, stroke: "gold", strokeWidth: "6", ease: "bounce" }, )
+
+
+let crystallBall = gsap.timeline()
+
+.fromTo("#Crystal_Power", { opacity: 0 }, { opacity: 1, stroke: "gold", duration: 10, ease: "bounce.out" }, 20)
