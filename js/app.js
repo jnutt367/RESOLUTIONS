@@ -1,7 +1,7 @@
 gsap.to("html", { backgroundColor: "black" })
 
 
-gsap.to("#First_Circle", { opacity: 1, display: "grid" })
+
 gsap.to("#Speech_Bubble", { opacity: 0 })
 
 let doubleBoxLift = gsap.timeline(
@@ -39,7 +39,7 @@ let sliderShowText = gsap.timeline(
     .fromTo("#Tentacle_4", { y: 180, x: -190, opacity: 1 }, { duration: 1.5, y: 0, x: 0, ease: "bounce.in", opacity: 1 }, )
 
 .fromTo("#Magic_Symbols", { opacity: 0 }, { opacity: 1 }, 9)
-    .fromTo("#First_Circle", { opacity: 0 }, { duration: 1, opacity: 1 }, 0)
+    .fromTo("#First_Circle", { opacity: 0 }, { duration: 1, opacity: 1 }, )
     .fromTo("#Second_Circle", { opacity: 0 }, { duration: 1, opacity: 1 }, )
     .fromTo("#Third_Circle", { opacity: 0 }, { duration: 1, opacity: 1 }, )
     .fromTo("#Fourth_Circle", { opacity: 0 }, { duration: 1, opacity: 1 }, )
@@ -61,12 +61,15 @@ let eyesMove = gsap.timeline()
 
 .fromTo("#symbol", { opacity: 0 }, { opacity: 1 })
     .fromTo("#Flame", { opacity: 0 }, { opacity: 1 })
-    .to("#eyes", { duration: 1, y: 7, x: -10 }, 10.5)
-    .to("#eyes", { duration: 1, y: 0, x: -10 }, 11)
+    .to("#eyes", { duration: 1, y: 7, x: -10 }, 11)
+    .to("#eyes", { duration: 1, y: 0, x: -10 }, 11.5)
     .to("#eyes", { duration: 1, y: -3, x: 0 })
     .to("#eyes", { duration: 1, y: 0, x: 2 })
     .to("#eyes", { duration: 1, x: 2, y: 7 })
-    .to("#eyes", { duration: 5, x: -3 })
+    .to("#eyes", { duration: 1, y: 7, x: -10 })
+    .to("#eyes", { duration: 1, y: 0, x: -10 })
+    .to("#eyes", { duration: 1, y: -3, x: 0 })
+    .to("#eyes", { duration: 1, duration: 1, y: 0, x: 2 })
     .to("#eyes", { x: 0, y: 0 })
     .to("#eye", { y: 30, x: -50 }, 20)
     .to("#Eye_Stalk_1", { y: 80 }, 20)
@@ -84,7 +87,7 @@ let tumblersSipn = gsap.timeline()
 
 let powerGauge = gsap.timeline()
     .to("#Gauge_Handle", { scale: 0 })
-    .to("#Gauge_Arrow", { duration: 1, x: 70, y: -20, ease: "bounce" }, 13.5)
+    .to("#Gauge_Arrow", { duration: 1, x: 70, y: -20, ease: "bounce" }, 16.2)
     .to("#Gauge_Arrow", { duration: 1, x: 160, rotate: 25, y: -25, ease: "bounce" })
     .to("#Gauge_Arrow", { duration: 1, x: 300, rotate: 55, y: 25, ease: "bounce" })
     .to("#Gauge_Arrow", { duration: 1, x: 400, rotate: 85, y: 130, ease: "bounce" })
