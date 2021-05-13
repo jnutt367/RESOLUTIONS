@@ -32,7 +32,7 @@ let sliderShowText = gsap.timeline(
     .fromTo("#Letter_Shadow", { opacity: 0 }, { duration: 1, opacity: 1 }, 6.6)
     .fromTo("#Letter_Siding", { opacity: 0 }, { duration: 1, opacity: 1 }, 6.6)
     .fromTo("#Letter", { opacity: 0 }, { duration: 1, opacity: 1 }, 6)
-    .fromTo("#Speech_Bubble", { x: -10 }, { duration: 1, y: -5, x: 30, opacity: 1, ease: "elastic.out" })
+    .fromTo("#Speech_Bubble", { x: -100 }, { duration: 1, y: -5, x: 30, opacity: 1, ease: "elastic.out" })
 
 .fromTo("#Magic_Symbols", { opacity: 0 }, { opacity: 1 }, 9)
     .fromTo("#First_Circle", { opacity: 0 }, { duration: 1, opacity: 1 }, 0)
@@ -52,16 +52,16 @@ let sliderShowText = gsap.timeline(
 
 let eyesMove = gsap.timeline()
     .to("#eyes", { y: 10, x: -6 }, 6)
-    .to("#eyes", { y: -3, x: 0 }, 7)
+    .to("#eyes", { y: 0, x: 0 }, 7)
     .to("#eyes", { y: 10, x: -8 }, 8)
 
 .fromTo("#symbol", { opacity: 0 }, { opacity: 1 })
     .fromTo("#Flame", { opacity: 0 }, { opacity: 1 })
-    .to("#eyes", { duration: 1, y: 7, x: -10 }, 9)
-    .to("#eyes", { duration: 1, y: 0, x: -10 }, 10)
+    .to("#eyes", { duration: 1, y: 7, x: -10 }, 8)
+    .to("#eyes", { duration: 1, y: 0, x: -10 }, 9)
     .to("#eyes", { duration: 1, y: -3, x: 0 })
     .to("#eyes", { duration: 1, y: 0, x: 2 })
-    .to("#eyes", { duration: 1, x: 2, y: 12 })
+    .to("#eyes", { duration: 1, x: 2, y: 7 })
     .to("#eyes", { duration: 1, x: -3 })
     .to("#eyes", { x: 0, y: 0 })
     .to("#eye", { y: 30, x: -50 }, 21)
@@ -89,12 +89,12 @@ let powerGauge = gsap.timeline()
 
 let circlesIngnite = gsap.timeline()
 
-.to("#First_Circle_Inner", { stroke: "gold", strokeWidth: "4" }, 16)
-    .to("#Second_Circle_Inner", { stroke: "gold", strokeWidth: "4" }, )
-    .to("#Third_Circle_Inner", { stroke: "gold", strokeWidth: "4" }, )
-    .to("#Fourth_Circle_Inner", { stroke: "gold", strokeWidth: "4" }, )
-    .to("#Fifth_Circle_Inner", { duration: 3, repeat: -1, stroke: "gold", strokeWidth: "6", ease: "bounce" }, )
-    .to("#Fifth_Circle", { duration: 3, repeat: -1, stroke: "gold", strokeWidth: "6", ease: "bounce" }, )
+.to("#First_Circle_Inner", { strokeWidth: "4" }, 16)
+    .to("#Second_Circle_Inner", { strokeWidth: "4" }, )
+    .to("#Third_Circle_Inner", { strokeWidth: "4" }, )
+    .to("#Fourth_Circle_Inner", { strokeWidth: "4" }, )
+    .to("#Fifth_Circle_Inner", { duration: 3, repeat: -1, strokeWidth: "6", ease: "bounce" }, )
+    .to("#Fifth_Circle", { duration: 3, repeat: -1, strokeWidth: "6", ease: "bounce" }, )
 
 
 let crystallBall = gsap.timeline()
