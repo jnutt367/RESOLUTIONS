@@ -3,7 +3,7 @@ gsap.to("html", { backgroundColor: "black" })
 
 gsap.to("#First_Circle", { opacity: 1, display: "grid" })
 gsap.to("#Speech_Bubble", { opacity: 0 })
-gsap.to("#Tentacles", { opacity: 0 })
+
 let doubleBoxLift = gsap.timeline(
 
     )
@@ -32,7 +32,11 @@ let sliderShowText = gsap.timeline(
     .fromTo("#Letter_Shadow", { opacity: 0 }, { duration: 1, opacity: 1 }, 6.6)
     .fromTo("#Letter_Siding", { opacity: 0 }, { duration: 1, opacity: 1 }, 6.6)
     .fromTo("#Letter", { opacity: 0 }, { duration: 1, opacity: 1 }, 6)
-    .fromTo("#Speech_Bubble", { x: -100 }, { duration: 1, y: -5, x: 30, opacity: 1, ease: "elastic.out" })
+    .fromTo("#Speech_Bubble", { x: -100 }, { y: -5, x: 30, opacity: 1, ease: "elastic.out" })
+    .fromTo("#Tentacle_1", { opacity: 1, y: 200, x: 180 }, { duration: 1.5, y: 0, x: 0, ease: "bounce.in", opacity: 1 }, 7)
+    .fromTo("#Tentacle_2", { y: 444, x: 200, opacity: 1 }, { duration: 1.5, y: 0, x: 0, ease: "bounce.in", opacity: 1 }, 8)
+    .fromTo("#Tentacle_3", { y: 400, x: -300, opacity: 1 }, { duration: 1.5, y: 0, x: 0, ease: "bounce.in", opacity: 1 }, 7)
+    .fromTo("#Tentacle_4", { y: 180, x: -190, opacity: 1 }, { duration: 1.5, y: 0, x: 0, ease: "bounce.in", opacity: 1 }, )
 
 .fromTo("#Magic_Symbols", { opacity: 0 }, { opacity: 1 }, 9)
     .fromTo("#First_Circle", { opacity: 0 }, { duration: 1, opacity: 1 }, 0)
@@ -57,8 +61,8 @@ let eyesMove = gsap.timeline()
 
 .fromTo("#symbol", { opacity: 0 }, { opacity: 1 })
     .fromTo("#Flame", { opacity: 0 }, { opacity: 1 })
-    .to("#eyes", { duration: 1, y: 7, x: -10 }, 8)
-    .to("#eyes", { duration: 1, y: 0, x: -10 }, 9)
+    .to("#eyes", { duration: 1, y: 7, x: -10 }, 10.5)
+    .to("#eyes", { duration: 1, y: 0, x: -10 }, 11)
     .to("#eyes", { duration: 1, y: -3, x: 0 })
     .to("#eyes", { duration: 1, y: 0, x: 2 })
     .to("#eyes", { duration: 1, x: 2, y: 7 })
