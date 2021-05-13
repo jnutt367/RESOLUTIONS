@@ -79,12 +79,13 @@ let eyesMove = gsap.timeline()
 
 let tumblersSipn = gsap.timeline()
 
-.to("#Slot_Lever", { x: 50, y: 10, rotate: 45 }, 21.5)
+.to("#Slot_Lever", { x: 50, y: 10, rotate: 45 }, 23.3)
     .to("#Crop", { duration: .3, y: -35, opacity: 0, repeat: 50, ease: "bounce" })
-    .to("#Share", { duration: .2, y: 35, opacity: 0, repeat: 50, ease: "bounce" }, 22)
-    .to("#Export", { duration: .3, y: -35, opacity: 0, repeat: 50, ease: "bounce" }, 22)
-    .to(".Button_Class", { y: -70 });
-
+    .to("#Share", { duration: .2, y: 35, opacity: 0, repeat: 50, ease: "bounce" }, 23.4)
+    .to("#Export", { duration: .3, y: -35, opacity: 0, repeat: 50, ease: "bounce" }, 23.4)
+    .to(".Button_Class", { y: -70 }, 20)
+    .to("#Button_Top_Btm", { x: -10, y: 10 }, 21)
+    .to("#Button_Top_Top", { x: -10, y: 10 }, 22)
 
 let powerGauge = gsap.timeline()
     .to("#Gauge_Handle", { scale: 0 })
@@ -110,4 +111,4 @@ let crystallBall = gsap.timeline()
     .to("#arm", { y: 10 }, 21.5)
     .to("#Arm_Top", { y: 10 }, 21.5)
     .to("#Crystal_Power", { y: 10 }, 22)
-    .fromTo("#Crystal_Power", { opacity: 0 }, { duration: 3, ease: "back", opacity: 1 }, 22)
+    .fromTo("#Crystal_Power", { opacity: 0 }, { duration: 3, ease: "back", opacity: 1 }, 22.2)
