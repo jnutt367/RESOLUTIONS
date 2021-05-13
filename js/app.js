@@ -87,7 +87,7 @@ let tumblersSipn = gsap.timeline()
 
 let powerGauge = gsap.timeline()
     .to("#Gauge_Handle", { scale: 0 })
-    .to("#Gauge_Arrow", { duration: 1, x: 70, y: -20, ease: "bounce" }, 16.2)
+    .to("#Gauge_Arrow", { duration: 1, x: 70, y: -20, ease: "bounce" }, 16.1)
     .to("#Gauge_Arrow", { duration: 1, x: 160, rotate: 25, y: -25, ease: "bounce" })
     .to("#Gauge_Arrow", { duration: 1, x: 300, rotate: 55, y: 25, ease: "bounce" })
     .to("#Gauge_Arrow", { duration: 1, x: 400, rotate: 85, y: 130, ease: "bounce" })
