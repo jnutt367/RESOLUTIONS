@@ -3,7 +3,7 @@ gsap.to("html", { backgroundColor: "black" })
 
 gsap.to("#First_Circle", { opacity: 1, display: "grid" })
 gsap.to("#Speech_Bubble", { opacity: 0 })
-
+gsap.to("#Tentacles", { opacity: 0 })
 let doubleBoxLift = gsap.timeline(
 
     )
@@ -64,13 +64,14 @@ let eyesMove = gsap.timeline()
     .to("#eyes", { duration: 1, x: 2, y: 7 })
     .to("#eyes", { duration: 1, x: -3 })
     .to("#eyes", { x: 0, y: 0 })
-    .to("#eye", { y: 30, x: -50 }, 21)
+    .to("#eye", { y: 30, x: -50 }, 20)
+    .to("#Eye_Stalk_1", { y: 80 }, 20)
     .to("#eyes", { duration: 1, y: 0, x: 0 });
 
 
 let tumblersSipn = gsap.timeline()
 
-.to("#Slot_Lever", { x: 50, y: 10, rotate: 45 }, 20)
+.to("#Slot_Lever", { x: 50, y: 10, rotate: 45 }, 19.5)
     .to("#Crop", { duration: .3, y: -15, opacity: 0, repeat: -1, ease: "bounce" })
     .to("#Share", { duration: .2, y: 15, opacity: 0, repeat: -1, ease: "bounce" })
     .to("#Export", { duration: .3, y: -15, opacity: 0, repeat: -1, ease: "bounce" })
@@ -98,5 +99,7 @@ let circlesIngnite = gsap.timeline()
 
 
 let crystallBall = gsap.timeline()
-
-.fromTo("#Crystal_Power", { opacity: 0 }, { duration: 3, ease: "back", opacity: 1 }, 21)
+    .to("#arm", { y: 10 }, 19.5)
+    .to("#Arm_Top", { y: 10 }, 19.5)
+    .to("#Crystal_Power", { y: 10 }, 19.5)
+    .fromTo("#Crystal_Power", { opacity: 0 }, { duration: 3, ease: "back", opacity: 1 }, 21)
