@@ -79,9 +79,9 @@ let eyesMove = gsap.timeline()
 let tumblersSipn = gsap.timeline()
 
 .to("#Slot_Lever", { x: 50, y: 10, rotate: 45 }, 19.5)
-    .to("#Crop", { duration: .3, y: -15, opacity: 0, repeat: -1, ease: "bounce" })
-    .to("#Share", { duration: .2, y: 15, opacity: 0, repeat: -1, ease: "bounce" })
-    .to("#Export", { duration: .3, y: -15, opacity: 0, repeat: -1, ease: "bounce" })
+    .to("#Crop", { duration: .3, y: -35, opacity: 0, repeat: 50, ease: "bounce" })
+    .to("#Share", { duration: .2, y: 35, opacity: 0, repeat: 50, ease: "bounce" }, 20)
+    .to("#Export", { duration: .3, y: -35, opacity: 0, repeat: 50, ease: "bounce" }, 20)
     .to(".Button_Class", { y: -70 });
 
 
