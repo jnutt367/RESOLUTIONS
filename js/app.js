@@ -3,14 +3,12 @@ gsap.to("html", { backgroundColor: "black" })
 
 
 gsap.to("#Speech_Bubble", { opacity: 0 })
+var animation = gsap.timeline()
 
-let doubleBoxLift = gsap.timeline(
-
-    )
-    .to("#Eye_Stalk_1", { x: -50, y: 110 })
+//let doubleBoxLift = gsap.timeline(  )
+.to("#Eye_Stalk_1", { x: -50, y: 110 })
     .to("#Eye_Stalk_2", { x: -100, y: 100 })
     .to("#Eye_Stalk_3", { x: -70, y: 50 })
-    //.fromTo("#Tentacles", { y: 500, scale: 0.1, y: 600, x: 100, opacity: 0 }, { x: 0, scale: 1, opacity: 1, duration: 5, y: 0 }, 7)
     .fromTo("#Tentacle_5", { y: 700, x: 0, scale: 0, opacity: 0 }, { scale: 1, opacity: 0, duration: 5, y: 0 }, 0)
     .fromTo("#Main_Floater", { y: 150 }, { duration: 6, y: 0, ease: "elastic.inOut" }, 0)
     .fromTo("#lever1", { y: 24 }, { duration: 6, y: -18, ease: "elastic.inOut" }, 0)
@@ -23,17 +21,14 @@ let doubleBoxLift = gsap.timeline(
     .fromTo("#Hand_Right", { opacity: 1, y: 150 }, { duration: 6, y: 0, ease: "elastic.inOut" }, 0)
     .fromTo("#Flame", { opacity: 0 }, { duration: 3, opacity: 0 }, 6)
 
-let sliderShowText = gsap.timeline(
-
-)
+//let sliderShowText = gsap.timeline()
 
 .fromTo("#slide", { x: 0 }, { duration: 1, ease: "power1.out", x: 230 }, 5.8)
     .fromTo("#Layer_6", { opacity: 0 }, { opacity: 1 }, 6)
     .fromTo("#Letter_Shadow", { opacity: 0 }, { duration: 1, opacity: 1 }, 6.6)
     .fromTo("#Letter_Siding", { opacity: 0 }, { duration: 1, opacity: 1 }, 6.6)
     .fromTo("#Letter", { opacity: 0 }, { duration: 1, opacity: 1 }, 6)
-    .fromTo("#Speech_Bubble", { x: -100 }, { y: -5, x: 30, opacity: 1, ease: "elastic.out" })
-    .fromTo("#Tentacle_1", { opacity: 1, y: 200, x: 180 }, { duration: 1.5, y: 0, x: 0, ease: "bounce.inOut", opacity: 1 }, 7)
+    .fromTo("#Tentacle_1", { opacity: 1, y: 200, x: 180 }, { duration: 1.5, y: 0, x: 0, ease: "bounce.inOut", opacity: 1 }, 8)
     .fromTo("#Tentacle_2", { y: 444, x: 200, opacity: 1 }, { duration: 1.5, y: 0, x: 0, ease: "bounce.inOut", opacity: 1 }, 8)
     .fromTo("#Tentacle_3", { y: 400, x: -300, opacity: 1 }, { duration: 1.5, y: 0, x: 0, ease: "bounce.inOut", opacity: 1 }, 7)
     .fromTo("#Tentacle_4", { y: 180, x: -190, opacity: 1 }, { duration: 1.5, y: 0, x: 0, ease: "bounce.inOut", opacity: 1 }, )
@@ -50,17 +45,18 @@ let sliderShowText = gsap.timeline(
     .fromTo("#Third_Circle_Inner", { opacity: 0 }, { duration: 1, opacity: 1 }, )
     .fromTo("#Fourth_Circle_Inner", { opacity: 0 }, { duration: 1, opacity: 1 }, )
     .fromTo("#Fifth_Circle_Inner", { opacity: 0 }, { duration: 1, opacity: 1 }, )
-    .fromTo("#Outer_Circle", { opacity: 0 }, { duration: 1, opacity: 1 });
+    .fromTo("#Outer_Circle", { opacity: 0 }, { duration: 1, opacity: 1 })
 
 
 
-let eyesMove = gsap.timeline()
-    .to("#eyes", { y: 10, x: -6 }, 6)
+//let eyesMove = gsap.timeline()
+.to("#eyes", { y: 10, x: -6 }, 6)
     .to("#eyes", { y: 0, x: 0 }, 7)
-    .to("#eyes", { y: 10, x: -8 }, 8)
-
-.fromTo("#symbol", { opacity: 0 }, { opacity: 1 })
-    .fromTo("#Flame", { opacity: 0 }, { opacity: 1 })
+    .fromTo("#Speech_Bubble", { x: -100 }, { duration: 1, y: -5, x: 30, opacity: 1, ease: "elastic.out" })
+    .to("#eyes", { duration: 1.5, y: 10, x: -8 }, 8)
+    .to("#eyes", { duration: .5, x: 2 })
+    .fromTo("#symbol", { opacity: 0 }, { opacity: 1 })
+    .fromTo("#Flame", { opacity: 0 }, { opacity: 1 }, 9)
     .to("#eyes", { duration: .3, y: 10, x: 2, repeat: 3, ease: "elastic.inOut" })
     .to("#eyes", { duration: 1, y: 7, x: -10 }, 11.5)
     .to("#eyes", { duration: 1, y: 0, x: -10 }, 11.9)
@@ -71,13 +67,13 @@ let eyesMove = gsap.timeline()
     .to("#eyes", { duration: 1, y: 0, x: -10 })
     .to("#eyes", { duration: 1, y: -3, x: 0 })
     .to("#eyes", { duration: 1, duration: 1, y: 0, x: 2 })
-    //.to("#eyes", { x: 0, y: 0 })
     .to("#eye", { y: 30, x: -50 }, 20)
     .to("#Eye_Stalk_1", { y: 80 }, 20)
-    .to("#eyes", { duration: 1, y: 0, x: 0 });
+    .to("#eyes", { duration: 1, y: 0, x: 0 })
 
 
-let tumblersSipn = gsap.timeline()
+
+//let tumblersSipn = gsap.timeline()
 
 .to("#Slot_Lever", { x: 50, y: 10, rotate: 45 }, 23.3)
     .to("#Crop", { duration: .3, y: -35, opacity: 0, repeat: 50, ease: "bounce" })
@@ -86,8 +82,8 @@ let tumblersSipn = gsap.timeline()
     .to(".Button_Class", { y: -70 }, 20)
     .to("#Button_Top_Btm", { x: -10, y: 10 }, 21)
     .to("#Button_Top_Top", { x: -10, y: 10 }, 22)
-
-let powerGauge = gsap.timeline()
+    .to("#eyes", { y: -1 }, 23)
+    //let powerGauge = gsap.timeline()
     .to("#Gauge_Handle", { scale: 0 })
     .to("#Gauge_Arrow", { duration: 1, x: 70, y: -20, ease: "power4" }, 16.1)
     .to("#Gauge_Arrow", { duration: 1, x: 160, rotate: 25, y: -25, ease: "power4" })
@@ -97,7 +93,7 @@ let powerGauge = gsap.timeline()
     .to("#Gauge_Arrow", { duration: .1, x: 430, rotate: 110, y: 270, ease: "power4" })
 
 
-let circlesIngnite = gsap.timeline()
+//let circlesIngnite = gsap.timeline()
 
 .to("#First_Circle_Inner", { duration: 1, strokeWidth: "6" }, 16)
     .to("#Second_Circle_Inner", { duration: 1, repeat: -1, strokeWidth: "6" }, )
@@ -107,8 +103,14 @@ let circlesIngnite = gsap.timeline()
     .to("#Fifth_Circle", { duration: 1, repeat: -1, strokeWidth: "6", ease: "bounce" }, )
 
 
-let crystallBall = gsap.timeline()
-    .to("#arm", { y: 10 }, 21.5)
+//let crystallBall = gsap.timeline()
+.to("#arm", { y: 10 }, 21.5)
     .to("#Arm_Top", { y: 10 }, 21.5)
     .to("#Crystal_Power", { y: 10 }, 22)
     .fromTo("#Crystal_Power", { opacity: 0 }, { duration: 3, ease: "back", opacity: 1 }, 22.2)
+
+document.getElementById("play").onclick = () => animation.play();
+document.getElementById("pause").onclick = () => animation.pause();
+document.getElementById("reverse").onclick = () => animation.reverse();
+document.getElementById("restart").onclick = () => animation.restart();
+document.getElementById("test").onclick = () => animation.test();
