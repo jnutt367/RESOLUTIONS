@@ -1,6 +1,6 @@
 gsap.to("html", { backgroundColor: "black" })
 gsap.from("html", { duration: 1.5, y: -500, ease: "bounce.out", fill: "black", opacity: .4, skewX: 45 });
-gsap.to("#bg", { opacity: .2 })
+
 
 gsap.to("#Speech_Bubble", { opacity: 0 })
 var animation = gsap.timeline()
