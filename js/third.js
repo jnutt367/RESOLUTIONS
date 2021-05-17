@@ -1,5 +1,5 @@
 gsap.to("html", { backgroundColor: "black" })
-gsap.from("html", { duration: 2, scale: 0, x: -500, opacity: "0", ease: "power4", fill: "red", opacity: .4, rotation: 0, transformOrigin: "center center", skewX: 360 });
+gsap.from("html", { scale: 0, x: -500, opacity: "0", ease: "power4", fill: "red", opacity: .4, rotation: 0, transformOrigin: "center center", skewX: 360 });
 
 
 gsap.to("#Speech_Bubble", { opacity: 0 })
