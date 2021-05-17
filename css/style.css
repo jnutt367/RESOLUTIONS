@@ -42,9 +42,12 @@ h1 {
 }
 
 button {
+    grid-template-columns: 1fr 1fr 1fr;
     border-radius: 10px;
     background: #fc3;
     color: #06c;
+    margin: 1em;
+    margin-top: -3em;
     font-size: 14px;
     padding: 10px;
     font-weight: bold;
