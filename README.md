@@ -17,8 +17,8 @@
 - 🌱 Hosted and deployed with vercel
 - ## Preview
 
-Preview the  live site on [TechNutt](https://jnutt367.github.io/RESOLUTIONS/First_Draft.html):
-
+Preview the  live site on [Resolutions](https://jnutt367.github.io/RESOLUTIONS/First_Draft.html):
+- 💬 Have a little fun, try out all five versions... there is one that is hidden somewhere can you find it?
 
 
 - 💬 Ask me about ...How fun it is to animate stuff?
