@@ -1,4 +1,4 @@
-## Hello and Thanks for viewing! RESOLUTIONS is a family affair animated SVG project.
+## 👋  Hello and Thanks for viewing! RESOLUTIONS is a family affair animated SVG project.
 
 #### A wizard my brother Brian and I had been planning on working to animate! Now it's DONE.
 ### First Brian created this beautiful SVG and sent it to me in an adobe illustrator file.🌱 (as a one piece grouped SVG)
