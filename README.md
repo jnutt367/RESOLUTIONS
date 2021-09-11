@@ -11,6 +11,12 @@
 - 🌱 Made a detailed Mockup and story boarded out how the animations should be ordered. 
 - 🌱 Implemented said animation through trials and tesing out different timelines in gsap3.
 - 🌱 Hosted and deployed with vercel
+- ## Preview
+
+Preview the  live site on [TechNutt](https://jnutt367.github.io/RESOLUTIONS/First_Draft.html):
+
+![Resolutions Animation](Resolutions.png)
+
 - 💬 Ask me about ...How fun it is to animate stuff?
 - 📫 How to reach me: ...jnutt367@gmail.com or 407-687-7889
 - 😄 Pronouns: ...He/Him
