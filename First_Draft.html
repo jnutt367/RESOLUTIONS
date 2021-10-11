@@ -10,24 +10,71 @@
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Resolutions</title>
-    <style>
+    
      <style>
-        html {
-            background-color: #000;
-        }
-        body {
-         background-image: url(https://raw.githubusercontent.com/jnutt367/RESOLUTIONS/main/best_orange_bg.gif);
-         }
-        .header {
-            background-color: #000;
-            color: white;
-            padding: 20px;
-            font-family: fantasy;
-        }
-         .container-fluid {
-          background-color: black;
-         }
-         
+   html {
+    position: relative;
+    z-index: 3;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    background-image:url(https://raw.githubusercontent.com/jnutt367/RESOLUTIONS/main/best_orange_bg.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+    position: relative;
+    z-index: 3;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+#Main_Floater {
+    position: relative;
+    z-index: 0;
+}
+
+svg {
+    position: relative;
+    z-index: 0;
+    width: 100vw;
+    height: 90vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    position: relative;
+    padding: 5em;
+    font-size: 1em;
+}
+
+#button_wrapper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 10px;
+    background: #fc3;
+    color: #06c;
+    margin: 1em;
+    margin-top: -3em;
+    font-size: 14px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+button:focus {
+    outline: #063;
+    background-color: white;
+}
+
     </style>
 </head>
 
